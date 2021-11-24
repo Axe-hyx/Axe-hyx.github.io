@@ -11,6 +11,6 @@ I am debuging my implementation of Curve in 3D [Jiang. 2017]. For the convenienc
 
 I do not quiet unsderstand the following steps, there my be some error in other part of algorithm. 
 
-1. get the Kirchhoff stress $\tau$ from an input $F = \hat R$, using Drucker-Prager model.
+1. get the Kirchhoff stress $$\tau$$ from an input $F = \hat R$, using Drucker-Prager model.
 
 2. the computation of type ii force. According to my understanding, the Kronecker delta $\delta$ term in the parentheses compute the force direction; for 3D curve, which $\gamma = 1$, the left part is the product of $\frac{\partial \psi}{\partial \mathbf F}$ and first row of $\mathbf D^{-1}$.
