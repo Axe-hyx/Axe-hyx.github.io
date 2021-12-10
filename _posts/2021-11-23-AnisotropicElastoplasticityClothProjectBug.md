@@ -4,7 +4,7 @@ title: "reproduce paper [Jiang. 2017], project error"
 author: "Axe-hyx"
 categories: journal
 tags: [paper,sample]
-image: cards.jpg
+image:
 ---
 
 With the help of [Nghia Truong](https://ttnghia.github.io), I fixed this bug, which is caused by the wrong project step.
