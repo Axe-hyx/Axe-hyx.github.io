@@ -24,62 +24,60 @@ I am debuging my implementation of Curve in 3D [Jiang. 2017]. For the convenienc
     padding: 2px;">Coodinate I use.</div>
 </center>
 
-Denote yarn parallel to X axis as scene I, yarns parallel to Z axis as Scene II.
 # Simulation retults
 
 $dt = 4e^{-5}$
 
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="./assets/img/xgroundinit.png"
-    width="50%" height="50%">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">Scene I, after initialization, frame = 1.</div>
-</center>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="./assets/img/xgroundfinish.png"
-    width="50%" height="50%">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">Scene I, droped to ground (before hitting ground), frame = 8600.</div>
-</center>
+Denote yarn parallel to X axis as scene I, yarns parallel to Z axis as Scene II.
 
 Scene I, results look fine.
 
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="./assets/img/zgroundinit.png"
-    width="50%" height="50%">
+    src="./assets/img/xgroundinit.png"
+    width="45%" height="45%">
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="./assets/img/xgroundfinish.png"
+    width="45%" height="45%">
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">Scene II, after initialization, frame = 1.</div>
+    padding: 2px;">Scene I. Left: after initialization, frame = 1.</div>
+    &ensp;
+    &ensp;
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">Right: drop to ground (before hitting ground), frame = 8600.</div>
 </center>
+
+Scene II, d matrix will no be orthogonal after some time, finally will blow up.
 
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="./assets/img/zgroundinit.png"
+    width="45%" height="45%">
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="./assets/img/zgroundfinish.png"
-    width="50%" height="50%">
+    width="45%" height="45%">
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">Scene II, next moment will blow up, frame = 198.</div>
+    padding: 2px;">Scene II. Left: after initialization, frame = 1.</div>
+    &ensp;
+    &ensp;
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">Right: next moment will blow up, frame = 198.</div>
 </center>
 
-Scene II, d matrix will no be orthogonal after some time, finally will blow up.
 
 \\
 Algorithm steps related to d matrix (deformed elastic material directions) are listed below.
