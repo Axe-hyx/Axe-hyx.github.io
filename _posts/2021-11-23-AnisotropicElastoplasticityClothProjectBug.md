@@ -1,11 +1,17 @@
 ---
 layout: post
-title: "reproduce paper [Jiang. 2017]"
+title: "reproduce paper [Jiang. 2017], project error"
 author: "Axe-hyx"
 categories: journal
 tags: [paper,sample]
 image: cards.jpg
 ---
+
+With the help of [Nghia Truong](https://ttnghia.github.io), I fixed this bug, which is caused by the wrong project step.
+
+# Correct update step
+
+TO BE UPDATED
 
 I am debuging my implementation of Curve in 3D [Jiang. 2017]. For the convenience of debuging, I ignore the compute step of `return mapping` and `the type iii force`.
 
