@@ -21,7 +21,7 @@ I am debuging my implementation of Curve in 3D [Jiang. 2017]. For the convenienc
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">Coodinate I use.</div>
+    padding: 2px;">Coordinate system I use.</div>
 </center>
 
 # Simulation retults
