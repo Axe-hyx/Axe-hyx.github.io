@@ -82,7 +82,7 @@ Scene II, d matrix will no be orthogonal after some time, finally will blow up.
 \\
 Algorithm steps related to d matrix (deformed elastic material directions) are listed below.
 
-# Initalize
+# Initialize
 
 $$
 \begin{array}{l}
