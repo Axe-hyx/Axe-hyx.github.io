@@ -87,7 +87,7 @@ Algorithm steps related to d matrix (deformed elastic material directions) are l
 $$
 \begin{array}{l}
 \quad\mathbf d_{p,0} = \text{mesh}(p, \beta) - \text{mesh}(p,0)\\
-\quad\mathbf d_{p,1} = \mathbf d_{p,0} \times \begin{array}{c}[0 & 0 & 1]\end{array}\\
+\quad\mathbf d_{p,1} = \mathbf d_{p,0} \times \begin{array}{c}[0 & 1 & 0]\end{array}\\
 \quad\mathbf  d_{p,2} =\mathbf  d_{p,0} \times \mathbf  d_{p,1}
 \end{array}
 $$
