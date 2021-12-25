@@ -104,7 +104,7 @@ $$
 
 $$
 \text{Let}\ C = \text{cohesion}\\
-\epsilon_i = \ln \sigma_i - C \quad \text{avoid signed addition}\\ 
+\epsilon_i = \ln \sigma_i - C \\ 
 \text{tr} = \sum \epsilon _i + \ln J_p \\
 \hat \epsilon = \epsilon - \frac{\text{tr}}{\text {d}}\mathbf I \\
 \begin{cases}
@@ -141,8 +141,7 @@ g^{\prime} \mathbf{r}^{T} \hat{\mathbf{R}}^{T} & \hat{\mathbf{P}} \hat{\mathbf{R
 f^{\prime} r_{11}+g^{\prime} \mathbf{r}^{T} \mathbf{r} & g^{\prime} \mathbf{r}^{T} \hat{\mathbf{R}}^{T} \\
 g^{\prime} \mathbf{r}^{T} \hat{\mathbf{R}}^{T} & p\mathbf I
 \end{array}\right] \\
-\frac{\partial \psi}{\partial \mathbf d^E} =\mathbf Q \mathbf A \mathbf R^{-T}\\
-\frac{\partial \psi}{\partial \mathbf F} = \frac{\partial \psi}{\partial \mathbf d^E}  \mathbf D^T\\
+\frac{\partial \psi}{\partial \mathbf F} =\mathbf Q \mathbf A \mathbf R^{-T}\\
 \mathbf{f}_{q \zeta}^{(i i)}(\hat{\mathbf{x}})=-\sum_{p \in \mathcal{I}^{(i i i)}} \sum_{\epsilon} V_{p}^{0} \frac{\partial \psi}{\partial F_{\zeta \epsilon}} \sum_{\beta=1}^{\gamma}\left(\delta_{q, \operatorname{mesh}(p, \beta)}-\delta_{q, \operatorname{mesh}(p, 0)}\right) D_{p, \beta \epsilon}^{-1}\\
 \mathbf f_q^{(ii)} = -\sum_{p \in \mathcal{I}^{(i i i)}} V_p^0 \frac{\partial \psi}{\partial \mathbf F} D^{-1}_{\text{row}(0)} (\delta_{q,\operatorname{mesh}(p,1)} - \delta_{q,\operatorname{mesh}(p,0)})
 $$
